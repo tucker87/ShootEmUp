@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets
+namespace Assets.Scripts
 {
     class Bullet : MonoBehaviour
     {
@@ -21,7 +18,6 @@ namespace Assets
             var movement = new Vector3();
             movement += Vector3.right*Speed*Time.deltaTime;
             transform.position += movement*Speed*Time.deltaTime;
-        }
-        
+        }        
     }
 }
