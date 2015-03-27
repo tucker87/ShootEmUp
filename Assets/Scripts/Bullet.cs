@@ -4,7 +4,7 @@ namespace Assets.Scripts
 {
     class Bullet : MonoBehaviour
     {
-        public float Speed;
+        public float Speed = 30;
 
         // Use this for initialization
         public void Start()
