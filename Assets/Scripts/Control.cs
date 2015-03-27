@@ -44,6 +44,7 @@ namespace Assets.Scripts
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 var bullet = Instantiate(Bullet, transform.position, transform.rotation);
+                bullet.name = "PlayerBullet";
             }
                 
         }

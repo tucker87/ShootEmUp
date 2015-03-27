@@ -22,8 +22,10 @@ namespace Assets.Scripts
             if (!(_timer < Time.time)) 
                 return;
 
-            Instantiate(Enemy, transform.position, transform.rotation); //This spawns the emeny
+            Debug.Log("Spawning Enemy");
+            var enemy = Instantiate(Enemy, transform.position, transform.rotation);
             _timer = Time.time + 3;
+            Debug.Log(_timer);
         }
     }
 }
