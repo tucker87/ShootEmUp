@@ -47,11 +47,21 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Bullet.cs" />
-     <Compile Include="Assets\Scripts\Collision.cs" />
      <Compile Include="Assets\Scripts\Control.cs" />
      <Compile Include="Assets\Scripts\Despawner.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\MoveForward.cs" />
+     <Compile Include="Assets\SpaceShooter\Done\Done_Scripts\Done_BGScroller.cs" />
+     <Compile Include="Assets\SpaceShooter\Done\Done_Scripts\Done_DestroyByBoundary.cs" />
+     <Compile Include="Assets\SpaceShooter\Done\Done_Scripts\Done_DestroyByContact.cs" />
+     <Compile Include="Assets\SpaceShooter\Done\Done_Scripts\Done_DestroyByTime.cs" />
+     <Compile Include="Assets\SpaceShooter\Done\Done_Scripts\Done_EvasiveManeuver.cs" />
+     <Compile Include="Assets\SpaceShooter\Done\Done_Scripts\Done_GameController.cs" />
+     <Compile Include="Assets\SpaceShooter\Done\Done_Scripts\Done_Mover.cs" />
+     <Compile Include="Assets\SpaceShooter\Done\Done_Scripts\Done_PlayerController.cs" />
+     <Compile Include="Assets\SpaceShooter\Done\Done_Scripts\Done_RandomRotator.cs" />
+     <Compile Include="Assets\SpaceShooter\Done\Done_Scripts\Done_WeaponController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
