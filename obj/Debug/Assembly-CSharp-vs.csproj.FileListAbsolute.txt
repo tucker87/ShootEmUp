@@ -24,3 +24,16 @@ F:\~Git\ShootEmUp\Temp\bin\Debug\Unity.CecilTools.dll
 F:\~Git\ShootEmUp\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
 F:\~Git\ShootEmUp\obj\Debug\Assembly-CSharp.dll
 F:\~Git\ShootEmUp\obj\Debug\Assembly-CSharp.pdb
+D:\Home\Documents\GitHub\ShootEmUp\Temp\bin\Debug\Assembly-CSharp.dll
+D:\Home\Documents\GitHub\ShootEmUp\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\Home\Documents\GitHub\ShootEmUp\Temp\bin\Debug\UnityEditor.dll
+D:\Home\Documents\GitHub\ShootEmUp\Temp\bin\Debug\UnityEngine.dll
+D:\Home\Documents\GitHub\ShootEmUp\Temp\bin\Debug\UnityEngine.UI.dll
+D:\Home\Documents\GitHub\ShootEmUp\Temp\bin\Debug\Mono.Cecil.dll
+D:\Home\Documents\GitHub\ShootEmUp\Temp\bin\Debug\Unity.SerializationLogic.dll
+D:\Home\Documents\GitHub\ShootEmUp\Temp\bin\Debug\Unity.DataContract.dll
+D:\Home\Documents\GitHub\ShootEmUp\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\Home\Documents\GitHub\ShootEmUp\Temp\bin\Debug\Unity.CecilTools.dll
+D:\Home\Documents\GitHub\ShootEmUp\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+D:\Home\Documents\GitHub\ShootEmUp\obj\Debug\Assembly-CSharp.dll
+D:\Home\Documents\GitHub\ShootEmUp\obj\Debug\Assembly-CSharp.pdb
