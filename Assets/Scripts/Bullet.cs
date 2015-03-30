@@ -4,20 +4,12 @@ namespace Assets.Scripts
 {
     class Bullet : MonoBehaviour
     {
-        public float Speed = 30;
+        public int Team;
 
-        // Use this for initialization
-        public void Start()
+        public void OnTriggerEnter(Collider col)
         {
-
+            Debug.Log(name + " hit " + col.name);
+            Destroy(gameObject);
         }
-
-        // Update is called once per frame
-        public void Update()
-        {
-            var movement = new Vector3();
-            movement += Vector3.right*Speed*Time.deltaTime;
-            transform.position += movement*Speed*Time.deltaTime;
-        }        
     }
 }
