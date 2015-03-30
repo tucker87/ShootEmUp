@@ -4,7 +4,9 @@ namespace Assets.Scripts
 {
     public class EnemySpawner : MonoBehaviour
     {
-        public Transform Enemy;
+        public Enemy Enemy;
+        public EnemyMovement EnemyMovement;
+
         private float _timer;
 
         void Awake()
@@ -12,19 +14,14 @@ namespace Assets.Scripts
             _timer = Time.time + 3;
         }
 
-        void Start () 
-        {
-
-        }
-
         void Update () 
         {
-            if (!(_timer < Time.time)) 
+            if (_timer > Time.time) 
                 return;
-            
+
+            Enemy.EnemyMovement = EnemyMovement;
             Instantiate(Enemy, transform.position, transform.rotation);
             _timer = Time.time + 3;
-            Debug.Log(_timer);
         }
     }
 }
