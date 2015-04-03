@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts
-{
     public class Control : MonoBehaviour
     {
 
@@ -15,7 +13,7 @@ namespace Assets.Scripts
         }
 
         // Update is called once per frame
-        public void Update()
+        void Update()
         {
             Move();
             Shoot();
@@ -38,15 +36,29 @@ namespace Assets.Scripts
 
             transform.position += movement*Speed*Time.deltaTime;
         }
+		public GameObject shot;
+		public Transform shotSpawn;
+		public float fireRate;
+		
+		private float nextFire;
+		
+		void Shoot ()
+		{
+			if (Input.GetKey (KeyCode.Space) && Time.time > nextFire) {
+				nextFire = Time.time + fireRate;
+				Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+				GetComponent<AudioSource> ().Play ();
+			}
+		}
+        //private void Shoot()
+        //{
 
-        private void Shoot()
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                var bullet = Instantiate(Bullet, transform.position, transform.rotation);
-                bullet.name = "PlayerBullet";
-            }
+			//if (Input.GetKeyDown(KeyCode.Space))
+            //{
+            //    var bullet = Instantiate(Bullet, transform.position, transform.rotation);
+            //    bullet.name = "PlayerBullet";
+            //}
                 
-        }
-    }
+        //}
+   
 }
