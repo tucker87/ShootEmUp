@@ -32,13 +32,12 @@ namespace Assets.Scripts
             }
         }
 
-        public static void MoveWave(Transform element, MoveDirection direction, float speed)
+        public static void MoveWave(Transform element, float age, float speed)
         {
-            float delta = 1f;
+            const float delta = .2f;
 
-            Vector3 v = element.position;
-            v.y += delta * Mathf.Sin(Time.time * speed / 2);
-            Debug.DrawLine(element.position, v);
+            var v = element.position;
+            v.y += delta * Mathf.Sin((Time.time - age) * (speed / 2));
             element.position = v;
             
 

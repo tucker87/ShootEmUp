@@ -6,10 +6,13 @@ namespace Assets.Scripts
     public class Enemy : MonoBehaviour
     {
         public float Speed = 30;
+        private float _spawnTime;
         public EnemyMovement EnemyMovement = EnemyMovement.Straight;
 
         void Start()
         {
+            _spawnTime = Time.time;
+
             Debug.Log(EnemyMovement);
             switch (EnemyMovement)
             {
@@ -17,8 +20,10 @@ namespace Assets.Scripts
                     Movement.MoveStraight(transform, MoveDirection.Left, Speed);
                     break;
                 case EnemyMovement.Wave:
-                    Movement.MoveStraight(transform, MoveDirection.Left, Speed);
-                    //transform.GetComponent<Rigidbody>().velocity += transform.up * (Speed * 0.5f);
+                    Movement.MoveStraight(transform, MoveDirection.Left, Speed/2);
+                    var startingPosition = transform.position;
+                    startingPosition.y -= Speed / 5;
+                    transform.position = startingPosition;
                     break;
             }
         }
@@ -26,7 +31,7 @@ namespace Assets.Scripts
         void FixedUpdate()
         {
             if (EnemyMovement == EnemyMovement.Wave)
-                Movement.MoveWave(transform, MoveDirection.Left, Speed*0.5f);
+                Movement.MoveWave(transform, _spawnTime, Speed*0.5f);
         }
 
         public void OnTriggerEnter(Collider col)
